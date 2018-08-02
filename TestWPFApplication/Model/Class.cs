@@ -21,6 +21,9 @@ namespace TestWPFApplication.Model
 
         [ForeignKey("School")]
         public int SchoolID { get; set; }
+
+        public virtual Teacher Teacher { get; set; }
+        public virtual School School { get; set; }
     }
 
     public enum WeekDay

@@ -19,9 +19,5 @@ namespace TestWPFApplication.Model
         public string ZipCode { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
-
-        [ForeignKey("School")]
-        public int SchoolID { get; set; }
-
     }
 }

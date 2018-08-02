@@ -16,5 +16,8 @@ namespace TestWPFApplication.Model
 
         [ForeignKey("Student")]
         public int StudentID { get; set; }
+
+        public virtual Student Student { get; set; }
+        public virtual Class Class { get; set; }
     }
 }

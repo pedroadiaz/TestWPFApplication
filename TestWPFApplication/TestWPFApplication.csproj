@@ -67,6 +67,15 @@
     </ApplicationDefinition>
     <Compile Include="Data\ISchoolRepository.cs" />
     <Compile Include="Data\SchoolRepository.cs" />
+    <Compile Include="Migrations\201808021649163_SomeNewMigration.cs" />
+    <Compile Include="Migrations\201808021649163_SomeNewMigration.Designer.cs">
+      <DependentUpon>201808021649163_SomeNewMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808021658132_RemovingSchoolFromTeachers.cs" />
+    <Compile Include="Migrations\201808021658132_RemovingSchoolFromTeachers.Designer.cs">
+      <DependentUpon>201808021658132_RemovingSchoolFromTeachers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ViewModels\SchoolViewModel.cs" />
     <Compile Include="Views\AddSchools.xaml.cs">
       <DependentUpon>AddSchools.xaml</DependentUpon>
@@ -108,6 +117,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Migrations\201808021649163_SomeNewMigration.resx">
+      <DependentUpon>201808021649163_SomeNewMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808021658132_RemovingSchoolFromTeachers.resx">
+      <DependentUpon>201808021658132_RemovingSchoolFromTeachers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -121,9 +136,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Migrations\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>

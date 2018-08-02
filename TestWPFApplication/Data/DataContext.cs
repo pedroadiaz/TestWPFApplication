@@ -11,6 +11,11 @@ namespace TestWPFApplication.Data
 {
     public class DataContext : DbContext
     {
+        public DataContext() : base("StudentContext")
+        {
+
+        }
+
         public DbSet<Student> Students { get; set; }
         public DbSet<StudentClass> StudentClasses { get; set; }
         public DbSet<Class> Classes { get; set; }
