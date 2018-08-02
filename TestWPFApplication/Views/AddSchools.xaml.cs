@@ -13,23 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-using TestWPFApplication.Views;
-
-namespace TestWPFApplication
+namespace TestWPFApplication.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for AddSchools.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AddSchools : Page
     {
-        public MainWindow()
+        public AddSchools()
         {
             InitializeComponent();
-        }
-
-        private void SchoolsClick(object sender, RoutedEventArgs e)
-        {
-            MainFrame.Content = new AddSchools();
         }
     }
 }

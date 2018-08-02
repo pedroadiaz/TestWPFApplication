@@ -6,7 +6,16 @@
         xmlns:local="clr-namespace:TestWPFApplication"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Go To Schools" Grid.Column="0" Click="SchoolsClick" Margin="10 0"/>
+        </Grid>
+        <Frame x:Name="MainFrame"/>
+    </StackPanel>
 </Window>
